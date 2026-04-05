@@ -29,7 +29,8 @@ const movies = ref([]);
 const fetchMovies = () => {
     fetch('/api/v1/movies', {
         headers: {
-            'Accept': 'application/json'
+            'Accept': 'application/json',
+            'Authorization': 'Bearer ' + localStorage.getItem('token')
         }
     })
     .then(response => response.json())
