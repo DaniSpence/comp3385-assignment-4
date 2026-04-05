@@ -18,8 +18,12 @@
                         <RouterLink class="nav-link" :class="{ active: $route.path === '/about'}" to="/about">About</RouterLink>
                     </li>
                     <li class="nav-item">
+                        <router-link class="nav-link" to="/movies">Movies</router-link>
+                    </li>
+                    <li class="nav-item">
                         <router-link class="nav-link" to="/movies/create">Add Movie</router-link>
                     </li>
+                    
                 </ul>
             </div>
         </div>
